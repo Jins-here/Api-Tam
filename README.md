@@ -4,7 +4,8 @@ Une Api utilisant Puppeteer qui permet de récupérer les horaires en temps rée
 Demo Gif :
 
 <img src="https://im5.ezgif.com/tmp/ezgif-5-bd12364f93.gif" width="400" height="350" />
-
+<br>
+<br>
  # Usage #
  
  Installation des Dépendances : 
@@ -16,7 +17,8 @@ ou
 
  
  
- Changer ***ligne***, ***l'arre*t** et la ***direction*** dans le fichier ``api.js`` parce que vous voulez.\n
+ Changer ***ligne***, ***l'arre*t** et la ***direction*** dans le fichier ``api.js`` parce que vous voulez.
+ <br>
  Vous récupérer un array que vous pouvez introduire dans votre code ou autres !
  
  ## Erreurs Connues ##
