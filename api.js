@@ -106,7 +106,9 @@ const puppeteer = require('puppeteer');
                         break;
                     }
                 }
-            } catch (error) { }
+            } catch (error) {
+                console.log(error);
+            }
         }
     } else {
         for (let i = 0; i < xPathImageBus.length; i++) {
