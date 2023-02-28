@@ -10,9 +10,9 @@ Demo Gif :
  Installation des Dépendances : 
  ``npm i puppeteer``
 ou
- ``npm i``
+ ``npm i``\n
  
-\n\nVous récupérer un array que vous pouvez introduire dans votre code ou autres !
+Vous récupérer un array que vous pouvez introduire dans votre code ou autres !
 
  
  
