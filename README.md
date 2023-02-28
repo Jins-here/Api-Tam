@@ -9,13 +9,12 @@ Demo Gif :
  # Usage #
  
  Installation des Dépendances : 
- ``npm i puppeteer``
-ou
- ``npm i``
+ ``npm i puppeteer``<br>ou
+ <br>``npm i``
  
 
 
-  <br>
+  
  
  Changer ***ligne***, ***l'arre*t** et la ***direction*** dans le fichier ``api.js`` parce que vous voulez.
  <br>
