@@ -12,6 +12,6 @@ Demo Gif :
  ``npm i puppeteer``
  
  
- Changer **__ligne__**, **__l'arret__** et la **__direction__** parce que vous voulez.
+ Changer ***ligne***, ***l'arre*** et la ***direction*** parce que vous voulez.
  
  
