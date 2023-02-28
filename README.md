@@ -15,6 +15,6 @@ Demo Gif :
 
  
  
- Changer ***ligne***, ***l'arre*t** et la ***direction*** parce que vous voulez.
+ Changer ***ligne***, ***l'arre*t** et la ***direction*** dans le fichier ``api.js`` parce que vous voulez.
  
  
