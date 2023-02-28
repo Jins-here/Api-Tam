@@ -3,7 +3,7 @@ Une Api utilisant Puppeteer qui permet de récupérer les horaires en temps rée
 
 Demo Gif :\n
 
-<img src="https://im5.ezgif.com/tmp/ezgif-5-bd12364f93.gif" width="400" height="350" />\n\n
+<img src="https://im5.ezgif.com/tmp/ezgif-5-bd12364f93.gif" width="400" height="350" />
 
  # Usage #
  
