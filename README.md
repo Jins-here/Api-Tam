@@ -21,7 +21,7 @@ Demo Gif :
  ## Erreurs Connues ##
  
 Si vous avez des erreurs essayées de rajouter du temps d'attente dans les deux différentes variables.
-\n
+
 <img src="https://i.imgur.com/JnaV8yD.png" width="300" height="100" />
 
  
