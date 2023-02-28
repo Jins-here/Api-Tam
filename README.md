@@ -6,9 +6,12 @@ Demo Gif :
 
  # Usage #
  
- Installation de puppeteer : 
+ Installation des Dépendances : 
  ``npm i``
- or
+ ou
  ``npm i puppeteer``
+ 
+ 
+ Changer **ligne**, **l'arret** et la **direction** parce que vous voulez.
  
  
