@@ -8,8 +8,6 @@ Demo Gif :
  # Usage #
  
  Installation des Dépendances : 
- ``npm i``
- ou
  ``npm i puppeteer``
  
 
