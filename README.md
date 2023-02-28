@@ -12,7 +12,7 @@ Demo Gif :
 ou
  ``npm i``
  
-
+\n\nVous récupérer un array que vous pouvez introduire dans votre code ou autres !
 
  
  
