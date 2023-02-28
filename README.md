@@ -9,6 +9,8 @@ Demo Gif :
  
  Installation des Dépendances : 
  ``npm i puppeteer``
+ou
+ ``npm i``
  
 
 
