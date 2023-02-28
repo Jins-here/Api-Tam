@@ -17,4 +17,9 @@ Demo Gif :
  
  Changer ***ligne***, ***l'arre*t** et la ***direction*** dans le fichier ``api.js`` parce que vous voulez.
  
+ ## Erreurs Connues ##
+ 
+Si vous avez des erreurs essayées de rajouter du temps d'attente dans les deux différentes variables.
+<img src="https://imgur.com/a/7PPfElP" width="200" height="100" />
+
  
