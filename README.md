@@ -10,13 +10,14 @@ Demo Gif :
  Installation des Dépendances : 
  ``npm i puppeteer``
 ou
- ``npm i``\n
+ ``npm i``
  
-Vous récupérer un array que vous pouvez introduire dans votre code ou autres !
+
 
  
  
- Changer ***ligne***, ***l'arre*t** et la ***direction*** dans le fichier ``api.js`` parce que vous voulez.
+ Changer ***ligne***, ***l'arre*t** et la ***direction*** dans le fichier ``api.js`` parce que vous voulez.\n
+ Vous récupérer un array que vous pouvez introduire dans votre code ou autres !
  
  ## Erreurs Connues ##
  
