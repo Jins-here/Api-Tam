@@ -22,4 +22,4 @@ Si vous avez des erreurs essayées de rajouter du temps d'attente dans les deux 
 
 <img src="https://i.imgur.com/JnaV8yD.png" width="300" height="100" />
 
- 
+ Vous pouvez aussi ouvrir une Issue si l'erreur persiste toujours
