@@ -3,7 +3,7 @@ const puppeteer = require('puppeteer');
 (async () => {
 
     let ligne = 1; // Numero de la ligne
-    let Arret = "Stade de la Mosson"; // Nom de l'arret
+    let Arret = "Euromédecine"; // Nom de l'arret
     let Direction = "Mosson"; // Direction du tram ou bus
 
     const tempsdattenteACTIONS = 700; // Temps d'attente en millisecondes a changer si sa ne fonctionne pas !!
@@ -81,7 +81,7 @@ const puppeteer = require('puppeteer');
 
     let etapesHoraire = false;
 
-    await page.waitForTimeout(tempsdattenteACTIONS);
+    await page.waitForXPath('//*[@id="mainMiddle"]/div/h1')
     if (ligne <= 4) {
         for (let i = 0; i < xPathImageTram.length; i++) {
             try {
@@ -143,8 +143,10 @@ const puppeteer = require('puppeteer');
         return await browser.close();
     }
 
-    await page.waitForTimeout(tempsdattentePageChange + 1700); // Temps d'attente en millisecondes a changer si sa ne fonctionne pas !!
 
+
+    await page.waitForXPath('//*[@id="goatSelection"]/div[1]/ul[1]/li[3]'); // Direction titre (faut attendre qu'il soit la pour continuer)
+    await page.waitForTimeout(tempsdattenteACTIONS);
     // Recuperer les horaires
     let troisBlocArray = ['//*[@id="hourMonitoring"]/ul/li[1]/span', '//*[@id="hourMonitoring"]/ul/li[2]/span', '//*[@id="hourMonitoring"]/ul/li[3]/span']
 
