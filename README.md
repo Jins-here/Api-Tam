@@ -3,7 +3,7 @@ Une Api utilisant Puppeteer qui permet de récupérer les horaires en temps rée
 
 Demo Gif :
 
-<img src="https://s9.gifyu.com/images/gif_api_demo.gif" width="400" height="350" />
+<img src="https://cdn.discordapp.com/attachments/488055568809066516/1083152733139378288/gif_api_demo.gif" width="400" height="350" />
 <br>
 
  # Usage #
