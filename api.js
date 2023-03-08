@@ -7,7 +7,7 @@ const puppeteer = require('puppeteer');
     let Direction = "Mosson"; // Direction du tram ou bus
 
     const tempsdattenteACTIONS = 700; // Temps d'attente en millisecondes a changer si sa ne fonctionne pas !!
-    const tempsdattentePageChange = 1500; // Temps d'attente en millisecondes a changer si sa ne fonctionne pas !!
+
 
     if (ligne <= 0 || ligne > 53) {
         console.error("ERROR : /!\\ La ligne n'existe pas /!\\");
@@ -68,7 +68,7 @@ const puppeteer = require('puppeteer');
     await clickOnButton('//*[@id="stopForm"]/fieldset/div[2]/input');
 
     // Cliquer sur la direction voulu
-    await page.waitForTimeout(tempsdattentePageChange);
+
     await page.waitForXPath('//*[@id="mainMiddle"]/div/h1');
 
     // Verifier si la direction existe si oui cliquer dessus
@@ -91,7 +91,7 @@ const puppeteer = require('puppeteer');
                     return image.alt;
                 }, imageXPath);
                 if (parseInt(altText) === ligne) {
-                    console.log("Ligne trouvée " + altText);
+                    console.log("Ligne " + altText + " trouvée");
                     const modifiedXPath = xPathImageTram[i].replace('/img', '/a');
                     const text = await page.evaluate((xpath) => {
                         const element = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
@@ -99,16 +99,14 @@ const puppeteer = require('puppeteer');
                     }, modifiedXPath);
 
                     if (text.includes(Direction.trim().toUpperCase()) || text.includes(Direction.trim().toLowerCase()) || text.toLowerCase().trim().replace('-', ' ').includes(Direction.trim().toLowerCase())) {
-                        console.log("Direction trouvée");
+                        console.log("Direction " + Direction + " trouvée");
                         const [clickDirectionFound] = await page.$x(modifiedXPath);
                         await clickDirectionFound.click();
                         etapesHoraire = true;
                         break;
                     }
                 }
-            } catch (error) {
-                console.log(error);
-            }
+            } catch (error) { }
         }
     } else {
         for (let i = 0; i < xPathImageBus.length; i++) {
@@ -121,14 +119,14 @@ const puppeteer = require('puppeteer');
                 }, imageXPath);
                 console.log(altText);
                 if (parseInt(altText) === ligne) {
-                    console.log("Ligne trouvée");
+                    console.log("Ligne " + altText + " trouvée");
                     const modifiedXPath = xPathImageBus[i].replace('/img', '/a');
                     const text = await page.evaluate((xpath) => {
                         const element = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
                         return element ? element.textContent.trim() : null;
                     }, modifiedXPath);
                     if (text.includes(Direction.trim().toUpperCase()) || text.includes(Direction.trim().toLowerCase()) || text.toLowerCase().trim().replace('-', ' ').includes(Direction.trim().toLowerCase())) {
-                        console.log("Direction trouvée");
+                        console.log("Direction " + Direction + " trouvée");
                         const [clickDirectionFound] = await page.$x(modifiedXPath);
                         await clickDirectionFound.click();
                         etapesHoraire = true;
@@ -148,7 +146,7 @@ const puppeteer = require('puppeteer');
 
 
     await page.waitForXPath('//*[@id="goatSelection"]/div[1]/ul[1]/li[3]'); // Direction titre (faut attendre qu'il soit la pour continuer)
-    await page.waitForTimeout(tempsdattenteACTIONS);
+
     // Recuperer les horaires
     let troisBlocArray = ['//*[@id="hourMonitoring"]/ul/li[1]/span', '//*[@id="hourMonitoring"]/ul/li[2]/span', '//*[@id="hourMonitoring"]/ul/li[3]/span']
 
